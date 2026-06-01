@@ -2,53 +2,99 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+
+  background-image: url("https://pbs.twimg.com/media/EeztntCU0AMTp2V.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-div {
-  max-width: 500px;
-  margin: 50px auto;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.container {
+  width: 400px;
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+
+  text-align: center;
+  color: white;
 }
 
 h1 {
-  text-align: center;
-  color: #333;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 32px;
 }
 
 input {
-  width: 70%;
-  padding: 10px;
-  margin: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  width: 65%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
 }
 
 button {
-  padding: 10px 15px;
+  padding: 12px 18px;
+  margin-left: 8px;
+
   border: none;
-  background-color: #007bff;
+  border-radius: 8px;
+
+  background: #00c853;
   color: white;
-  border-radius: 5px;
+  font-weight: bold;
   cursor: pointer;
+
+  transition: 0.3s;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background: #00a844;
+  transform: scale(1.05);
 }
 
-p {
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+li {
+  background: rgba(255, 255, 255, 0.2);
+
+  color: white;
+  padding: 12px 15px;
+  margin: 10px 0;
+
+  border-radius: 10px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #f8f9fa;
-  padding: 10px;
-  border-radius: 5px;
+
+  transition: 0.3s;
 }
 
-hr {
-  margin: 20px 0;
+li:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateX(5px);
+}
+
+li button {
+  background: #ff5252;
+  padding: 8px 12px;
+}
+
+li button:hover {
+  background: #e53935;
 }
